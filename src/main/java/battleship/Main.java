@@ -23,6 +23,7 @@ public class Main extends Application {
         welcome.end.setOnAction(actionEvent -> stage.close());
         finish.setOnFinished(actionEvent -> stage.setScene(welcome.startGame()));
         stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icon.png"))));
+        stage.setTitle("Schiffe versenken");
         stage.show();
     }
 
